@@ -1,0 +1,12 @@
+.inlog {
+    margin: 30%;
+    margin-top: 10%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.inlogforum {
+    display: block;
+}
