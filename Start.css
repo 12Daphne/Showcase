@@ -1,6 +1,7 @@
 .inlog {
     background-color: rgb(31,34,71, 0.10);
-    margin-top: 5%;   
+    margin-top: 5%;
+    margin-left: 5%;   
     box-shadow: 10px 10px 5px rgb(80, 40, 93);
     width: fit-content;
 }
