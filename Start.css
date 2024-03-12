@@ -1,18 +1,19 @@
 .inlog {
-    background-color: white;
-    margin: 30%;
+    background-color: rgb(31,34,71, 0.10);
     margin-top: 5%;
     display: flex;
     justify-self: center;
     justify-content: center;
-    border: 2px solid black;
+    
     box-shadow: 10px 10px 5px rgb(80, 40, 93);
 }
 
 .inlogforum {
     display: block;
 }
-
+label {
+    color: white;
+}
 body {
     background: rgb(31,34,71);
     background: linear-gradient(90deg, rgba(31,34,71,1) 0%, rgba(124,124,203,1) 55%, rgba(166,0,255,0.19091386554621848) 100%);
@@ -21,7 +22,7 @@ body {
 
 .inputf {
     box-shadow: 5px 5px 2px rgb(17, 3, 57);
-    width: 100%;
+    width: 80%;
 }
 
 .logo {
@@ -37,4 +38,14 @@ body {
     font-size: 500%;
     color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.logonav {
+    width: 30%;
+}
+
+@media only screen and (min-width: 800px) {
+    .inlog {
+
+    }
 }
