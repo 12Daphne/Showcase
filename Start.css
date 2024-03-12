@@ -2,6 +2,7 @@
     background-color: rgb(31,34,71, 0.10);
     margin-top: 5%;   
     box-shadow: 10px 10px 5px rgb(80, 40, 93);
+    width: fit-content;
 }
 
 .inlogforum {
@@ -18,14 +19,14 @@ body {
 
 .inputf {
     box-shadow: 5px 5px 2px rgb(17, 3, 57);
-    width: 40%;
+    width: 80%;
 }
 
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 80%;
 }
 .title {
     -webkit-text-stroke-width: 3px;
@@ -40,16 +41,24 @@ body {
     width: 30%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .inlog {
         display: flex;
         justify-self: center;
-        justify-content: center
+        justify-content: center;
+        width: auto;
     }
 
     .inputf {
         box-shadow: 5px 5px 2px rgb(17, 3, 57);
         width: 80%;
     }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
     
 }
