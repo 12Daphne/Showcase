@@ -1,10 +1,6 @@
 .inlog {
     background-color: rgb(31,34,71, 0.10);
-    margin-top: 5%;
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    
+    margin-top: 5%;   
     box-shadow: 10px 10px 5px rgb(80, 40, 93);
 }
 
@@ -22,7 +18,7 @@ body {
 
 .inputf {
     box-shadow: 5px 5px 2px rgb(17, 3, 57);
-    width: 80%;
+    width: 40%;
 }
 
 .logo {
@@ -46,6 +42,14 @@ body {
 
 @media only screen and (min-width: 800px) {
     .inlog {
-
+        display: flex;
+        justify-self: center;
+        justify-content: center
     }
+
+    .inputf {
+        box-shadow: 5px 5px 2px rgb(17, 3, 57);
+        width: 80%;
+    }
+    
 }
