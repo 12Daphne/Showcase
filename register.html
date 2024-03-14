@@ -2,23 +2,27 @@
 <head>
     <link rel="stylesheet" href="Start.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 <body>
     <img src="logo.png" class="logo">
     <div class="inlog">
-        <form class="inlogforum">
+        <form class="inlogforum" id="form">
             <h3 style="color: white;" class="inlogforum">register to begin your drawing journey!</h3>
+            <label for="name">name</label><br>
+            <input class="inputf" id="name" type="text" required> <br> <br>
             <label for="username">Username</label><br>
-            <input class="inputf" id="username" type="text"> <br> <br>
+            <input class="inputf" id="username" type="text" required> <br> <br>
             <label for="email">Email</label><br>
-            <input class="inputf" id="email" type="email"> <br> <br>
+            <input class="inputf" id="email" type="email" required> <br> <br>
             <label for="password">Password</label><br> 
-            <input id="password" class="inputf" type="password"> <br> <br>
+            <input id="password" class="inputf" type="password" required> <br> <br>
             <label for="rpassord">Reapeat your password</label><br> 
-            <input id="rpassword" class="inputf" type="password"> <br> <br>
+            <input id="rpassword" class="inputf" type="password" required> <br> <br>
             <button class="inputf" type="submit">register</button> <br>
 
             <p>Do you already have an account? click <a href="Start.html">here</a> to login</p>
         </form>
     </div>
+    <script src="register.js"></script>
 </body>
