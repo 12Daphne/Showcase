@@ -8,10 +8,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
 
 async function hashPassword(password) {
-    // Create a new instance of the SHA-256 hash function
     const sha256 = crypto.subtle.digest('SHA-256', new TextEncoder().encode(password));
-    
-    // Convert the result to a hexadecimal string
     return sha256.then(buffer => {
         const hashArray = Array.from(new Uint8Array(buffer));
         const hashedPassword = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');

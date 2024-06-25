@@ -17,6 +17,7 @@ class verify extends HTMLElement{
     const input = document.createElement('input');
     input.id = "code";
     input.type = Number;
+    input.name = "code";
     const button = document.createElement('button');
     button.id = "submit";
 
@@ -77,27 +78,23 @@ class verify extends HTMLElement{
         
             fetch('https://localhost:7212/api/VerificatieCheck', {
                 method: 'POST',
+                credentials: "include",
                 headers: {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin' : '*'
+                    
                 },
                 body: JSON.stringify(data)
 
             }).then(response => {
-                return response.text();
-
-            }).then(data => {
-              console.log(data);
-              if (data != "Wrong") {
-                console.log("data");
-                localStorage.setItem('token', data);
+              if (response.ok) {
+                console.log("data")
                 window.location.href = /Showcase/;
               } else {
                 alert("invalid code");
               }
 
-            })
-            .catch(error => {
+            }).catch(error => {
 
             });
           });
